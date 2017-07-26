@@ -56,7 +56,7 @@ module.exports = {
 };
 ```
 
-在使用 `webpack.config.js` 后，您可以在调用 Webpack 时不使用任何参数
+在使用 `webpack.config.js` 后，您可以在调用 `webpack` 命令时不使用任何参数
 
 ```bash
 $ webpack
