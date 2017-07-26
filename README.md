@@ -90,7 +90,7 @@ $ webpack
 1. [多个入口文件](#demo02-multiple-entry-files-source)
 1. [Babel转换器](#demo03-babel-loader-source)
 1. [CSS转换器](#demo04-css-loader-source)
-1. [Image转换器](#demo05-image-loader-source)
+1. [图片转换器](#demo05-image-loader-source)
 1. [CSS模块](#demo06-css-module-source)
 1. [UglifyJs插件](#demo07-uglifyjs-plugin-source)
 1. [用于在浏览器中打开HTML文件的webpack插件](#demo08-html-webpack-plugin-and-open-browser-webpack-plugin-source)
