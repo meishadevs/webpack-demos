@@ -177,11 +177,12 @@ module.exports = {
 };
 ```
 
-## Demo03: Babel-loader ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
+## Demo03: Babel转换器([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
 
-Loaders are preprocessors which transform a resource file of your app ([more info](http://webpack.github.io/docs/using-loaders.html)). For example, [Babel-loader](https://www.npmjs.com/package/babel-loader) can transform JSX/ES6 file into JS file. Official doc has a complete list of [loaders](http://webpack.github.io/docs/list-of-loaders.html).
+转换器是是转换应用程序资源文件的预处理程序 ([更多信息](http://webpack.github.io/docs/using-loaders.html)). 例如, [Babel转换器](https://www.npmjs.com/package/babel-loader) 
+转换器可以将JSX / ES6文件转换为JS文件。官方文档中有[转换器的完整列表](http://webpack.github.io/docs/list-of-loaders.html).
 
-`main.jsx` is a JSX file.
+`main.jsx` 是一个JSX文件
 
 ```javascript
 const React = require('react');
@@ -224,7 +225,7 @@ module.exports = {
 };
 ```
 
-In `webpack.config.js`, `module.loaders` field is used to assign loaders. The above snippet uses `babel-loader` which also needs plugins [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) and [babel-preset-react](https://www.npmjs.com/package/babel-preset-react) to transpile ES6 and React. You can also take another way to set the babel query option.
+在 `webpack.config.js` 中, `module.loaders` 字段用于分配转换器。 上面的片段使用 `babel-loader` 也需要插件 [babel-preset-es2015](https://www.npmjs.com/package/babel-preset-es2015) and [babel-preset-react](https://www.npmjs.com/package/babel-preset-react) 透过ES6和React。 您还可以采取其他方式设置babel查询选项。
 
 ```javascript
 module: {
@@ -241,9 +242,9 @@ module: {
 }
 ```
 
-## Demo04: CSS-loader ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
+## Demo04: CSS转换器 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
 
-Webpack allows you to require CSS in JS file, then preprocessed CSS file with CSS-loader.
+Webpack允许您在JS文件中引入CSS，然后使用CSS转换器预处理CSS文件。
 
 main.js
 
