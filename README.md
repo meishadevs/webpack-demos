@@ -180,7 +180,7 @@ module.exports = {
 ## Demo03: Babel转换器([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
 
 转换器是是转换应用程序资源文件的预处理程序 ([更多信息](http://webpack.github.io/docs/using-loaders.html)). 例如, [Babel转换器](https://www.npmjs.com/package/babel-loader) 
-转换器可以将JSX / ES6文件转换为JS文件。官方文档中有[转换器的完整列表](http://webpack.github.io/docs/list-of-loaders.html).
+可以将JSX / ES6文件转换为JS文件。官方文档中有[转换器的完整列表](http://webpack.github.io/docs/list-of-loaders.html).
 
 `main.jsx` 是一个JSX文件
 
