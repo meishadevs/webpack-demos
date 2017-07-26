@@ -142,8 +142,7 @@ $ webpack-dev-server
 
 ## Demo02: 多个入口文件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo02))
 
-Multiple entry files are allowed. It is useful for a multi-page app.
-允许使用多个入口文件，它对于多页面应用程序很有用
+允许使用多个入口文件，它对于多页面应用程序很有用。
 
 ```javascript
 // main1.js
