@@ -4,7 +4,7 @@
 
 ## 如何使用
 
-首先, 全局安装 [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) .
+首先, 全局安装 [Webpack](https://www.npmjs.com/package/webpack) 和 [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) .
 
 ```bash
 $ npm i -g webpack@1.x webpack-dev-server@1.x
