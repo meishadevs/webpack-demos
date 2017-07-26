@@ -288,10 +288,9 @@ module.exports = {
   }
 };
 ```
+注意，你必须使用两种转换器来转换CSS文件。 首先使用[CSS转换器](https://www.npmjs.com/package/css-loader) 来读取CSS文件，另一种是将样式标签插入到HTML页面中的[样式转换器](https://www.npmjs.com/package/style-loader). 不同的转换器通过感叹号链接。
 
-Attention, you have to use two loaders to transform CSS file. First is [CSS-loader](https://www.npmjs.com/package/css-loader) to read CSS file, and another is [Style-loader](https://www.npmjs.com/package/style-loader) to insert Style tag into HTML page. Different loaders are linked by exclamation mark(!).
-
-After launching the server, `index.html` will have internal style sheet.
+启动服务器后, `index.html` 将具有内部样式表。
 
 ```html
 <head>
@@ -304,9 +303,9 @@ After launching the server, `index.html` will have internal style sheet.
 </head>
 ```
 
-## Demo05: Image loader ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo05))
+## Demo05: 图片转换器 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo05))
 
-Webpack could also require images in JS files.
+Webpack也可以在js文件中引入图片
 
 main.js
 
@@ -346,20 +345,20 @@ module.exports = {
 };
 ```
 
-[url-loader](https://www.npmjs.com/package/url-loader) transforms image files. If the image size is smaller than 8192 bytes, it will be transformed into Data URL; otherwise, it will be transformed into normal URL. As you see, question mark(?) is used to pass parameters into loaders.
+[url转换器](https://www.npmjs.com/package/url-loader) 转换图片文件. 如果图像尺寸小于8192个字节, 它将被转换成数据Url; 除此之外, 它将被转换成正常的Url. 如你所见, 问号（？）用于将参数传递给转换器。
 
-After launching the server, `small.png` and `big.png` will have the following URLs.
+启动服务器后，`small.png`和`big.png`将具有如下URL。
 
 ```html
 <img src="data:image/png;base64,iVBOR...uQmCC">
 <img src="4853ca667a2b8b8844eb2693ac1b2578.png">
 ```
 
-## Demo06: CSS Module ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo06))
+## Demo06: CSS模块 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo06))
 
-`css-loader?modules` (the query parameter modules) enables the [CSS Modules](https://github.com/css-modules/css-modules) spec.
+`css-loader?modules` (查询参数模块) 启用 [CSS模块](https://github.com/css-modules/css-modules)规范.
 
-It means your module's CSS is local scoped CSS by default. You can switch it off with `:global(...)` for selectors and/or rules. ([more info](https://css-modules.github.io/webpack-demo/))
+这意味着您的模块默认情况下，CSS是局域范围的CSS. 您可以使用 `:global(...)` f关闭选择器或规则. ([更多信息](https://css-modules.github.io/webpack-demo/))
 
 index.html
 
@@ -429,15 +428,15 @@ module.exports = {
 };
 ```
 
-Launch the server.
+启动服务器
 
 ```bash
 $ webpack-dev-server
 ```
 
-Visit http://127.0.0.1:8080 , you'll find that only second `h1` is red, because its CSS is local scoped, and both `h2` is blue, because its CSS is global scoped.
+访问 http://127.0.0.1:8080 ,你会发现只有第二个 `h1` 是红色的, 因为它的CSS范围是本地范围的, `h2` 是蓝色，因为它的CSS范围是全局范围的。
 
-## Demo07: UglifyJs Plugin ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo07))
+## Demo07: UglifyJs插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo07))
 
 Webpack has a plugin system to expand its functions. For example, [UglifyJs Plugin](http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin) will minify output(`bundle.js`) JS codes.
 
