@@ -64,7 +64,7 @@ $ webpack
 
 你应该知道的一些 Webpack 命令
 
-- `webpack` – 用于在开发环境中构建一次
+- `webpack` – 用于在开发环境中构建
 - `webpack -p` – 用于在生产环境中构建
 - `webpack --watch` – 监控目录下的文件变化并实时构建
 - `webpack -d` – 包含资源地图
