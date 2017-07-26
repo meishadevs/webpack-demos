@@ -1,16 +1,16 @@
-This repo is a collection of simple demos of Webpack.
+这个仓库是 Webpack 的简单演示的demo集合。
 
-These demos are purposely written in a simple and clear style. You will find no difficulty in following them to learn the powerful tool.
+这些演示的 demo 用简单明了的方式写成。 跟随他们学习强大的工具你会发现没有困难。
 
-## How to use
+## 如何使用
 
-First, install [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) globally.
+首先, 全局安装 [Webpack](https://www.npmjs.com/package/webpack) and [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) .
 
 ```bash
 $ npm i -g webpack@1.x webpack-dev-server@1.x
 ```
 
-Then, clone the repo and install the dependencies.
+然后, 将项目克隆到本地并安装项目的依赖
 
 ```bash
 # Linux & Mac
@@ -23,20 +23,20 @@ $ cd webpack-demos
 $ npm install
 ```
 
-Now, play with the source files under the repo's demo* directories.
+现在，在项目中的demo*目录下演示源文件
 
 ```bash
 $ cd demo01
 $ webpack-dev-server
 ```
 
-Visit http://127.0.0.1:8080 with your browser.
+在你的浏览器中访问 http://127.0.0.1:8080 .
 
-## Foreword: What is Webpack
+## 前言: Webpack 是什么
 
-Webpack is a front-end build systems like Grunt and Gulp.
+Webpack 是一个像 Grunt 和 Gulp 一样的前端构建系统。
 
-It can be used as a module bundler similar to Browserify, and do [much more](http://webpack.github.io/docs/what-is-webpack.html).
+它可以用作类似于Browserify的模块绑定器，并且做得[更多](http://webpack.github.io/docs/what-is-webpack.html).
 
 ```bash
 $ browserify main.js > bundle.js
@@ -44,7 +44,7 @@ $ browserify main.js > bundle.js
 $ webpack main.js bundle.js
 ```
 
-Its configuration file is `webpack.config.js`.
+它的配置文件是 `webpack.config.js`.
 
 ```javascript
 // webpack.config.js
@@ -56,13 +56,13 @@ module.exports = {
 };
 ```
 
-After having `webpack.config.js`, you can invoke Webpack without any arguments.
+在使用 `webpack.config.js` 后，您可以在调用 Webpack 时不使用任何参数
 
 ```bash
 $ webpack
 ```
 
-Some command-line options you should know.
+你应该知道的一些命令行选项
 
 - `webpack` – for building once for development
 - `webpack -p` – for building once for production (minification)
