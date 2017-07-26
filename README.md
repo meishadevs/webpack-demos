@@ -438,7 +438,7 @@ $ webpack-dev-server
 
 ## Demo07: UglifyJs插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo07))
 
-Webpack has a plugin system to expand its functions. For example, [UglifyJs Plugin](http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin) will minify output(`bundle.js`) JS codes.
+Webpack有一个扩展其功能的插件系统。 例如，[UglifyJs插件](http://webpack.github.io/docs/list-of-plugins.html#uglifyjsplugin) 将会缩小输出 (`bundle.js`) 的JS代码。
 
 main.js
 
@@ -478,15 +478,15 @@ module.exports = {
 };
 ```
 
-After launching the server, `main.js` will be minified into following.
+启动服务器后, `main.js` 将被细化为追随者
 
 ```javascript
 var o="Hello";o+=" World",document.write("<h1>"+o+"</h1>")
 ```
 
-## Demo08: HTML Webpack Plugin and Open Browser Webpack Plugin ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo08))
+## Demo08: Webpack下的HTML插件和Webpack下的打开浏览器插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo08))
 
-This demo shows you how to load 3rd-party plugins.
+这个demo向您展示如何加载第三方插件
 
 [html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) could create `index.html` for you, and [open-browser-webpack-plugin](https://github.com/baldore/open-browser-webpack-plugin) could open a new browser tab when Webpack loads.
 
@@ -519,17 +519,17 @@ module.exports = {
 };
 ```
 
-Run `webpack-dev-server`.
+运行  `webpack-dev-server`.
 
 ```bash
 $ webpack-dev-server
 ```
 
-Now you don't need to write `index.html` by hand and don't have to open browser by yourself. Webpack did all these things for you.
+现在你不需要手工编写 `index.html` 也不必自己打开浏览器。 Webpack自动为你做了所有这些事情。
 
-## Demo09: Environment flags ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo09))
+## Demo09:环境标志 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo09))
 
-You can enable some codes only in development environment with environment flags.
+您只能在具有环境标志的开发环境中启用一些代码
 
 main.js
 
@@ -569,7 +569,7 @@ module.exports = {
 };
 ```
 
-Now pass environment variable into webpack.
+现在将环境变量传递给webpack。
 
 ```bash
 # Linux & Mac
@@ -584,11 +584,11 @@ $ $env:DEBUG='true'
 $ webpack-dev-server
 ```
 
-## Demo10: Code splitting ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo10))
+## Demo10:代码拆分 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo10))
 
-For big web apps it’s not efficient to put all code into a single file, Webpack allows you to split them into several chunks. Especially if some blocks of code are only required under some circumstances, these chunks could be loaded on demand.
+对于大型网络应用程序，将所有代码放入单个文件并不有效，Webpack允许您将它们分割成多个块。 特别是如果在某些情况下只需要一些代码块，则这些块可以按需加载。
 
-At first, you use `require.ensure` to define a split point. ([official document](http://webpack.github.io/docs/code-splitting.html))
+首先，你使用 `require.ensure` 定义分割点。([官方文档](http://webpack.github.io/docs/code-splitting.html))
 
 ```javascript
 // main.js
@@ -600,14 +600,14 @@ require.ensure(['./a'], function(require) {
 });
 ```
 
-`require.ensure` tells Webpack that `./a.js` should be separated from `bundle.js` and built into a single chunk file.
+`require.ensure` 告诉Webpack `./a.js` 应该从 `bundle.js` 中分开，并且内置到单个块文件中。
 
 ```javascript
 // a.js
 module.exports = 'Hello World';
 ```
 
-Now Webpack takes care of the dependencies, output files and runtime stuff. You don't have to put any redundancy into your `index.html` and `webpack.config.js`.
+现在 Webpack 负责依赖、输出文件和运行时。你不必把任何冗余放在你的 `index.html` 和 `webpack.config.js` 中。
 
 ```html
 <html>
@@ -628,13 +628,13 @@ module.exports = {
 };
 ```
 
-Launch the server.
+启动服务器
 
 ```bash
 $ webpack-dev-server
 ```
 
-On the surface, you won't feel any differences. However, Webpack actually builds `main.js` and `a.js` into different chunks(`bundle.js` and `1.bundle.js`), and loads `1.bundle.js` from `bundle.js` when on demand.
+表面上你不会看到任何差异. 然而，实际上 Webpack 在不同的块（`bundle.js` and `1.bundle.js`) 中构建 `main.js` 和 `a.js` 文件。当有需要时从 `bundle.js` 加载 `1.bundle.js`。
 
 ## Demo11: Code splitting with bundle-loader ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo11))
 
