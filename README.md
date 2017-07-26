@@ -56,21 +56,21 @@ module.exports = {
 };
 ```
 
-在使用 `webpack.config.js` 后，您可以在调用 `webpack` 命令时不使用任何参数
+在使用 `webpack.config.js` 后，您可以在使用 `webpack` 命令时不使用任何参数
 
 ```bash
 $ webpack
 ```
 
-你应该知道的一些命令行选项
+你应该知道的一些 Webpack 命令
 
-- `webpack` – for building once for development
-- `webpack -p` – for building once for production (minification)
-- `webpack --watch` – for continuous incremental build
-- `webpack -d` – to include source maps
-- `webpack --colors` – for making things pretty
+- `webpack` – 用于在开发环境中构建一次
+- `webpack -p` – 用于在生产环境中构建
+- `webpack --watch` – 监控目录下的文件变化并实时构建
+- `webpack -d` – 包含资源地图
+- `webpack --colors` - 让编译的输出内容带有颜色
 
-To produce a production ready application, you could write `scripts` field in your package.json file as following.
+要生产一个可以准备就绪的应用程序，您可以在package.json文件中写下`scripts`字段，如下所示
 
 ```javascript
 // package.json
@@ -84,7 +84,7 @@ To produce a production ready application, you could write `scripts` field in yo
 }
 ```
 
-## Index
+## 索引
 
 1. [Entry file](#demo01-entry-file-source)
 1. [Multiple entry files](#demo02-multiple-entry-files-source)
@@ -103,7 +103,7 @@ To produce a production ready application, you could write `scripts` field in yo
 1. [Hot Module Replacement](#demo15-hot-module-replacement-source)
 1. [React router](#demo16-react-router-source)
 
-## Demo01: Entry file ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo01))
+## Demo01: 入口文件 ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo01))
 
 Entry file is a file which Webpack will read to build bundle.js.
 
