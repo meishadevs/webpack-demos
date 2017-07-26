@@ -103,11 +103,11 @@ $ webpack
 1. [Hot Module Replacement](#demo15-hot-module-replacement-source)
 1. [React router](#demo16-react-router-source)
 
-## Demo01: 入口文件 ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo01))
+## Demo01: 入口文件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo01))
 
-Entry file is a file which Webpack will read to build bundle.js.
+入口文件是一个 Webpack 将读取用来构建 bundle.js 的文件。
 
-For example, `main.js` is an entry file.
+例如, `main.js` 是一个入口文件
 
 ```javascript
 // main.js
@@ -123,8 +123,7 @@ index.html
   </body>
 </html>
 ```
-
-Webpack follows `webpack.config.js` to build `bundle.js`.
+Webpack 根据 `webpack.config.js` 中的配置信息来构建 `bundle.js`.
 
 ```javascript
 // webpack.config.js
@@ -135,16 +134,16 @@ module.exports = {
   }
 };
 ```
-
-Launch the server, visit http://127.0.0.1:8080 .
+启动服务, 访问 http://127.0.0.1:8080 .
 
 ```bash
 $ webpack-dev-server
 ```
 
-## Demo02: Multiple entry files ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo02))
+## Demo02: 多个入口文件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo02))
 
 Multiple entry files are allowed. It is useful for a multi-page app.
+允许使用多个入口文件，它对于多页面应用程序很有用
 
 ```javascript
 // main1.js
@@ -179,7 +178,7 @@ module.exports = {
 };
 ```
 
-## Demo03: Babel-loader ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
+## Demo03: Babel-loader ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
 
 Loaders are preprocessors which transform a resource file of your app ([more info](http://webpack.github.io/docs/using-loaders.html)). For example, [Babel-loader](https://www.npmjs.com/package/babel-loader) can transform JSX/ES6 file into JS file. Official doc has a complete list of [loaders](http://webpack.github.io/docs/list-of-loaders.html).
 
