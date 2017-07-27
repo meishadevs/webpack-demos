@@ -94,7 +94,7 @@ $ webpack
 1. [CSS模块](#demo06-css-module-source)
 1. [UglifyJs插件](#demo07-uglifyjs-plugin-source)
 1. [用于在浏览器中打开HTML文件的webpack插件](#demo08-html-webpack-plugin-and-open-browser-webpack-plugin-source)
-1. [环境变量](#demo09-environment-flags-source)
+1. [环境标签](#demo09-environment-flags-source)
 1. [代码拆分](#demo10-code-splitting-source)
 1. [代码拆分和bundle转换器](#demo11-code-splitting-with-bundle-loader-source)
 1. [公共模块](#demo12-common-chunk-source)
@@ -527,9 +527,9 @@ $ webpack-dev-server
 
 现在你不需要手工编写 `index.html` 也不必自己打开浏览器。 Webpack自动为你做了所有这些事情。
 
-## Demo09:环境标志 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo09))
+## Demo09:环境标签 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo09))
 
-您只能在具有环境标志的开发环境中启用一些代码
+您只能在具有环境标签的开发环境中启用一些代码
 
 main.js
 
