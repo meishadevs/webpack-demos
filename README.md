@@ -488,7 +488,7 @@ var o="Hello";o+=" World",document.write("<h1>"+o+"</h1>")
 
 这个demo向您展示如何加载第三方插件
 
-[html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) could create `index.html` for you, and [open-browser-webpack-plugin](https://github.com/baldore/open-browser-webpack-plugin) could open a new browser tab when Webpack loads.
+[html-webpack-plugin](https://github.com/ampedandwired/html-webpack-plugin) 可以为你创建 `index.html`, [open-browser-webpack-plugin](https://github.com/baldore/open-browser-webpack-plugin) 的作用是当 Webpack 加载时，可以打开新的浏览器选项卡。
 
 main.js
 
