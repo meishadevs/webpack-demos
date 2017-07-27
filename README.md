@@ -636,18 +636,18 @@ $ webpack-dev-server
 
 表面上你不会看到任何差异. 然而，实际上 Webpack 在不同的块（`bundle.js` and `1.bundle.js`) 中构建 `main.js` 和 `a.js` 文件。当有需要时从 `bundle.js` 加载 `1.bundle.js`。
 
-## Demo11: Code splitting with bundle-loader ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo11))
+## Demo11: 代码拆分和 bundle-loader ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo11))
 
-Another way of code splitting is using [bundle-loader](https://www.npmjs.com/package/bundle-loader).
+另一种代码拆分方式是使用 [bundle-loader](https://www.npmjs.com/package/bundle-loader).
 
 ```javascript
 // main.js
 
-// Now a.js is requested, it will be bundled into another file
+// 现在请求a.js，它将会被绑定到另一个文件中
 var load = require('bundle-loader!./a.js');
 
-// To wait until a.js is available (and get the exports)
-//  you need to async wait for it.
+//等到 a.js 可用（并获得导出）
+//你需要异步等待它
 load(function(file) {
   document.open();
   document.write('<h1>' + file + '</h1>');
@@ -655,13 +655,13 @@ load(function(file) {
 });
 ```
 
-`require('bundle-loader!./a.js')` tells Webpack to load `a.js` from another chunk.
+`require('bundle-loader!./a.js')` 告诉 Webpack 从另一个块加载 `a.js`
 
-Now Webpack will build `main.js` into `bundle.js`, and `a.js` into `1.bundle.js`.
+现在 Webpack 将在 `bundle.js` 中构建 `main.js`，在 `1.bundle.js` 中构建 `a.js`
 
-## Demo12: Common chunk ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo12))
+## Demo12: 公共模块 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo12))
 
-When multi scripts have common chunks, you can extract the common part into a separate file with CommonsChunkPlugin.
+当多个脚本具有公共模块时，可以使用 CommonsChunkPlugin 将公共部分提取到单独的文件中
 
 ```javascript
 // main1.jsx
@@ -729,7 +729,7 @@ module.exports = {
 
 ## Demo13: Vendor chunk ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo13))
 
-You can also extract the vendor libraries from a script into a separate file with CommonsChunkPlugin.
+您还可以从 CommonsChunkPlugin 中将脚本中的供应商库解压缩到单独的文件中
 
 main.js
 
@@ -769,7 +769,7 @@ module.exports = {
 };
 ```
 
-If you want a module available as variable in every module, such as making $ and jQuery available in every module without writing `require("jquery")`. You should use `ProvidePlugin` ([Official doc](http://webpack.github.io/docs/shimming-modules.html)).
+如果您希望在每个模块中都可以使用模块作为变量，例如使 $ 和 jQuery 在每个模块中都可用，而无需编写 `require("jquery")`。你应该使用 `ProvidePlugin` ([官方文档](http://webpack.github.io/docs/shimming-modules.html)).
 
 ```javascript
 // main.js
@@ -796,17 +796,17 @@ module.exports = {
 };
 ```
 
-## Demo14: Exposing global variables ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo14))
+## Demo14: 公开全局变量 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo14))
 
-If you want to use some global variables, and don't want to include them in the Webpack bundle, you can enable `externals` field in `webpack.config.js` ([official document](http://webpack.github.io/docs/library-and-externals.html)).
+如果要使用一些全局变量，并且不想将它们包含在 Webpack 包中，可以在 `webpack.config.js` 中启用 `externals` 字段 ([官方文档](http://webpack.github.io/docs/library-and-externals.html)).
 
-For example, we have a `data.js`.
+例如，我们有一个 `data.js`.
 
 ```javascript
 var data = 'Hello World';
 ```
 
-We can expose `data` as a global variable.
+我们可以将 `data` 作为一个全局变量暴露出来
 
 ```javascript
 // webpack.config.js
@@ -835,7 +835,7 @@ module.exports = {
 };
 ```
 
-Now, you require `data` as a module variable in your script. but it actually is a global variable.
+现在，您需要将 `data` 作为脚本中的模块变量。 但它实际上是一个全局变量。
 
 ```javascript
 // main.jsx
@@ -849,30 +849,30 @@ ReactDOM.render(
 );
 ```
 
-## Demo15: Hot Module Replacement ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo15))
+## Demo15: 模块热替换 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo15))
 
-[Hot Module Replacement](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) (HMR) exchanges, adds, or removes modules while an application is running **without a page reload**.
+[模块热替换](https://github.com/webpack/docs/wiki/hot-module-replacement-with-webpack) (HMR) 在应用程序运行时更改，添加或删除模块，而不**重新加载页面**
 
-You have [two ways](http://webpack.github.io/docs/webpack-dev-server.html#hot-module-replacement) to enable Hot Module Replacement with the webpack-dev-server.
+你有 [两种方式](http://webpack.github.io/docs/webpack-dev-server.html#hot-module-replacement) 使用 webpack-dev-server 启用模块热替换
 
-(1) Specify `--hot` and `--inline` on the command line
+(1) 在命令行中指定 `--hot` 和 `--inline`
 
 ```bash
 $ webpack-dev-server --hot --inline
 ```
 
-Meaning of the options:
+一些选项的含义 
 
-- `--hot`: adds the HotModuleReplacementPlugin and switch the server to hot mode.
-- `--inline`: embed the webpack-dev-server runtime into the bundle.
-- `--hot --inline`: also adds the webpack/hot/dev-server entry.
+- `--hot`: 添加 HotModuleReplacementPlugin 并将服务器切换到热模式
+- `--inline`: 将 webpack-dev-server 运行时嵌入到包中
+- `--hot --inline`: 也可以添加 webpack/hot/dev-server 入口
 
-(2) Modify `webpack.config.js`.
+(2) 修改 `webpack.config.js`.
 
-- add `new webpack.HotModuleReplacementPlugin()` to the `plugins` field
-- add `webpack/hot/dev-server` and `webpack-dev-server/client?http://localhost:8080` to the `entry` field
+- 将 `new webpack.HotModuleReplacementPlugin()` 添加到 `plugins` 字段中 
+- 将 `webpack/hot/dev-server` 和 `webpack-dev-server/client?http://localhost:8080` 添加到 `entry` 字段中
 
-`webpack.config.js` looks like the following.
+`webpack.config.js` 看起来像下面的样子
 
 ```javascript
 var webpack = require('webpack');
@@ -905,15 +905,15 @@ module.exports = {
 };
 ```
 
-Now launch the dev server.
+现在启动 dev 服务器 
 
 ```bash
 $ webpack-dev-server
 ```
 
-Visiting http://localhost:8080, you should see 'Hello World' in your browser.
+访问 http://localhost:8080，在你的浏览器中你应该可以看到 'Hello World'。
 
-Don't close the server. Open a new terminal to edit `App.js`, and modify 'Hello World' into 'Hello Webpack'. Save it, and see what happened in the browser.
+不用关闭这个服务器，打开一个新的终端编辑 `App.js` 文件，并将 `Hello World` 修改为 `Hello Webpack`保存。并在浏览器中查看发生了什么变化
 
 App.js
 
@@ -950,11 +950,11 @@ index.html
 </html>
 ```
 
-## Demo16: React router ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo16))
+## Demo16: React路由 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo16))
 
-This demo uses webpack to build [React-router](https://github.com/rackt/react-router/blob/0.13.x/docs/guides/overview.md)'s official example.
+这个 demo 使用 Webpack 构建 [React-router](https://github.com/rackt/react-router/blob/0.13.x/docs/guides/overview.md)的官方示例
 
-Let's imagine a little app with a dashboard, inbox, and calendar.
+让我们想象一下一个带有仪表板，收件箱和日历的应用程序。
 
 ```
 +---------------------------------------------------------+
@@ -982,7 +982,7 @@ Let's imagine a little app with a dashboard, inbox, and calendar.
 $ webpack-dev-server --history-api-fallback
 ```
 
-## Useful links
+## 有用的链接
 
 - [Webpack文档](http://webpack.github.io/docs/)
 - [Webpack怎么样](https://github.com/petehunt/webpack-howto), by Pete Hunt
