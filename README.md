@@ -177,12 +177,12 @@ module.exports = {
 };
 ```
 
-## Demo03: Babel转换器([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
+## Demo03: Babel-loader ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo03))
 
-转换器是是转换应用程序资源文件的预处理程序 ([更多信息](http://webpack.github.io/docs/using-loaders.html)). 例如, [Babel转换器](https://www.npmjs.com/package/babel-loader) 
-可以将JSX / ES6文件转换为JS文件。官方文档中有[转换器的完整列表](http://webpack.github.io/docs/list-of-loaders.html).
+转换器是是转换应用程序资源文件的预处理程序 ([更多信息](http://webpack.github.io/docs/using-loaders.html)). 例如, [Babel-loader](https://www.npmjs.com/package/babel-loader) 
+可以将 JSX / ES6 文件转换为 JS 文件。官方文档中有[转换器的完整列表](http://webpack.github.io/docs/list-of-loaders.html).
 
-`main.jsx` 是一个JSX文件
+`main.jsx` 是一个 JSX 文件
 
 ```javascript
 const React = require('react');
@@ -242,9 +242,9 @@ module: {
 }
 ```
 
-## Demo04: CSS转换器 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
+## Demo04: CSS-loader([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
 
-Webpack允许您在JS文件中引入CSS，然后使用CSS转换器预处理CSS文件。
+Webpack 允许您在 JS 文件中引入 CSS，然后使用 CSS-loader 预处理 CSS 文件。
 
 main.js
 
@@ -288,7 +288,7 @@ module.exports = {
   }
 };
 ```
-注意，你必须使用两种转换器来转换CSS文件。 首先使用[CSS转换器](https://www.npmjs.com/package/css-loader) 来读取CSS文件，另一种是将样式标签插入到HTML页面中的[样式转换器](https://www.npmjs.com/package/style-loader). 不同的转换器通过感叹号链接。
+注意，你必须使用两种转换器来转换CSS文件。 首先使用[CSS-loader](https://www.npmjs.com/package/css-loader) 来读取 CSS 文件，另一种是将样式标签插入到 HTML 页面中的[style-loader](https://www.npmjs.com/package/style-loader). 不同的转换器通过感叹号链接。
 
 启动服务器后, `index.html` 将具有内部样式表。
 
@@ -303,9 +303,9 @@ module.exports = {
 </head>
 ```
 
-## Demo05: 图片转换器 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo05))
+## Demo05: image-loader ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo05))
 
-Webpack也可以在js文件中引入图片
+Webpack 也可以在 js 文件中引入图片
 
 main.js
 
@@ -345,9 +345,9 @@ module.exports = {
 };
 ```
 
-[url转换器](https://www.npmjs.com/package/url-loader) 转换图片文件. 如果图像尺寸小于8192个字节, 它将被转换成数据Url; 除此之外, 它将被转换成正常的Url. 如你所见, 问号（？）用于将参数传递给转换器。
+[url-loader](https://www.npmjs.com/package/url-loader) 转换图片文件. 如果图像尺寸小于8192个字节, 它将被转换成数据 Url; 除此之外, 它将被转换成正常的 Url. 如你所见, 问号（？）用于将参数传递给转换器。
 
-启动服务器后，`small.png`和`big.png`将具有如下URL。
+启动服务器后，`small.png` 和 `big.png` 将具有如下 URL。
 
 ```html
 <img src="data:image/png;base64,iVBOR...uQmCC">
