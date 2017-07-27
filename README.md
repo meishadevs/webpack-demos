@@ -23,7 +23,7 @@ $ cd webpack-demos
 $ npm install
 ```
 
-现在，在项目中的demo*目录下演示源文件
+现在，在项目中的 demo* 目录下演示源文件
 
 ```bash
 $ cd demo01
@@ -36,7 +36,7 @@ $ webpack-dev-server
 
 Webpack 是一个像 Grunt 和 Gulp 一样的前端构建系统。
 
-它可以用作类似于Browserify的模块绑定器，并且做得[更多](http://webpack.github.io/docs/what-is-webpack.html).
+它可以用作类似于 Browserify 的模块绑定器，并且做得[更多](http://webpack.github.io/docs/what-is-webpack.html).
 
 ```bash
 $ browserify main.js > bundle.js
@@ -70,7 +70,7 @@ $ webpack
 - `webpack -d` – 包含资源地图
 - `webpack --colors` - 让编译的输出内容带有颜色
 
-要生产一个可以准备就绪的应用程序，您可以在package.json文件中写下`scripts`字段，如下所示
+要生产一个可以准备就绪的应用程序，您可以在 package.json 文件中写下` scripts` 字段，如下所示
 
 ```javascript
 // package.json
@@ -88,9 +88,9 @@ $ webpack
 
 1. [入口文件](#demo01-entry-file-source)
 1. [多个入口文件](#demo02-multiple-entry-files-source)
-1. [Babel转换器](#demo03-babel-loader-source)
-1. [CSS转换器](#demo04-css-loader-source)
-1. [图片转换器](#demo05-image-loader-source)
+1. [Babel-loader](#demo03-babel-loader-source)
+1. [CSS-loader](#demo04-css-loader-source)
+1. [image-loader](#demo05-image-loader-source)
 1. [CSS模块](#demo06-css-module-source)
 1. [UglifyJs插件](#demo07-uglifyjs-plugin-source)
 1. [用于在浏览器中打开HTML文件的webpack插件](#demo08-html-webpack-plugin-and-open-browser-webpack-plugin-source)
