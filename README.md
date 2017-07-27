@@ -358,7 +358,7 @@ module.exports = {
 
 `css-loader?modules` (查询参数模块) 启用 [CSS模块](https://github.com/css-modules/css-modules)规范.
 
-这意味着您的模块默认情况下，CSS是局域范围的CSS. 您可以使用 `:global(...)` f关闭选择器或规则. ([更多信息](https://css-modules.github.io/webpack-demo/))
+这意味着您的模块默认情况下，CSS是局域范围的CSS. 您可以使用 `:global(...)`选择器或规则关闭. ([更多信息](https://css-modules.github.io/webpack-demo/))
 
 index.html
 
