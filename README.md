@@ -98,7 +98,7 @@ $ webpack
 1. [代码拆分](#demo10-code-splitting-source)
 1. [代码拆分和bundle转换器](#demo11-code-splitting-with-bundle-loader-source)
 1. [公共模块](#demo12-common-chunk-source)
-1. [Vendor chunk](#demo13-vendor-chunk-source)
+1. [第三方代码块](#demo13-vendor-chunk-source)
 1. [公开全局变量](#demo14-exposing-global-variables-source)
 1. [模块热替换](#demo15-hot-module-replacement-source)
 1. [React路由](#demo16-react-router-source)
