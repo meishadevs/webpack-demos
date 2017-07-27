@@ -94,7 +94,7 @@ $ webpack
 1. [CSS模块](#demo06-css-module-source)
 1. [UglifyJs插件](#demo07-uglifyjs-plugin-source)
 1. [用于在浏览器中打开HTML文件的webpack插件](#demo08-html-webpack-plugin-and-open-browser-webpack-plugin-source)
-1. [环境标准](#demo09-environment-flags-source)
+1. [环境变量](#demo09-environment-flags-source)
 1. [代码拆分](#demo10-code-splitting-source)
 1. [代码拆分和bundle转换器](#demo11-code-splitting-with-bundle-loader-source)
 1. [公共模块](#demo12-common-chunk-source)
