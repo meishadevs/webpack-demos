@@ -89,7 +89,7 @@ $ webpack
 1. [入口文件](#demo01-入口文件-源代码)
 1. [多个入口文件](#demo02-多个入口文件-源代码)
 1. [Babel-loader](#demo03-babel-loader-源代码)
-1. [CSS-loader](#demo04-css-loader-源代码)
+1. [CSS-loader](#demo04-Css-loader-源代码)
 1. [image-loader](#demo05-image-loader-源代码)
 1. [CSS模块](#demo06-css模块-源代码)
 1. [UglifyJs插件](#demo07-uglifyjs插件-源代码)
