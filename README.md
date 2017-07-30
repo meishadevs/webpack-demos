@@ -484,7 +484,7 @@ module.exports = {
 var o="Hello";o+=" World",document.write("<h1>"+o+"</h1>")
 ```
 
-## Demo08: Webpack下的HTML插件和Webpack下的打开浏览器插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo08))
+## Demo08: 用于在浏览器中打开HTML文件的webpack插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo08))
 
 这个demo向您展示如何加载第三方插件
 
