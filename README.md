@@ -89,7 +89,7 @@ $ webpack
 1. [入口文件](#demo01-入口文件-源代码)
 1. [多个入口文件](#demo02-多个入口文件-源代码)
 1. [Babel-loader](#demo03-babel-loader-源代码)
-1. [CSS-loader](#demo04-Css-loader-源代码)
+1. [CSS-loader](#demo04-css-loader-源代码)
 1. [image-loader](#demo05-image-loader-源代码)
 1. [CSS模块](#demo06-css模块-源代码)
 1. [UglifyJs插件](#demo07-uglifyjs插件-源代码)
@@ -242,7 +242,7 @@ module: {
 }
 ```
 
-## Demo04: CSS-loader([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
+## Demo04: CSS-loader ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo04))
 
 Webpack 允许您在 JS 文件中引入 CSS，然后使用 CSS-loader 预处理 CSS 文件。
 
