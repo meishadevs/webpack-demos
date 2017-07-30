@@ -86,7 +86,7 @@ $ webpack
 
 ## 索引
 
-1. [入口文件](#demo01-entry-file-source)
+1. [入口文件](#demo01-entry-入口文件-源代码)
 1. [多个入口文件](#demo02-multiple-entry-files-source)
 1. [Babel-loader](#demo03-babel-loader-source)
 1. [CSS-loader](#demo04-css-loader-source)
