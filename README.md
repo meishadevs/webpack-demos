@@ -484,7 +484,7 @@ module.exports = {
 var o="Hello";o+=" World",document.write("<h1>"+o+"</h1>")
 ```
 
-## Demo08: 用于在浏览器中打开HTML文件的webpack插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo08))
+## Demo08: 用于在浏览器中打开HTML文件的Webpack插件 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo08))
 
 这个demo向您展示如何加载第三方插件
 
@@ -527,7 +527,7 @@ $ webpack-dev-server
 
 现在你不需要手工编写 `index.html` 也不必自己打开浏览器。 Webpack自动为你做了所有这些事情。
 
-## Demo09:环境标签 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo09))
+## Demo09: 环境标签 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo09))
 
 您只能在具有环境标签的开发环境中启用一些代码
 
@@ -584,7 +584,7 @@ $ $env:DEBUG='true'
 $ webpack-dev-server
 ```
 
-## Demo10:代码拆分 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo10))
+## Demo10: 代码拆分 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo10))
 
 对于大型网络应用程序，将所有代码放入单个文件并不有效，Webpack允许您将它们分割成多个块。 特别是如果在某些情况下只需要一些代码块，则这些块可以按需加载。
 
