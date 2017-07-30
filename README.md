@@ -727,7 +727,7 @@ module.exports = {
 }
 ```
 
-## Demo13: 第三方代码块 ([source](https://github.com/ruanyf/webpack-demos/tree/master/demo13))
+## Demo13: 第三方代码块 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo13))
 
 您还可以从 CommonsChunkPlugin 中将脚本中的供应商库解压缩到单独的文件中
 
