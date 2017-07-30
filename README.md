@@ -99,7 +99,7 @@ $ webpack
 1. [代码拆分和bundle-loader](#demo11-代码拆分和-bundle-loader-源代码)
 1. [公共模块](#demo12-公共模块-源代码)
 1. [第三方代码块](#demo13-第三方代码块-源代码)
-1. [公开全局变量](#demo14-公共全局变量-源代码)
+1. [公共全局变量](#demo14-公共全局变量-源代码)
 1. [模块热替换](#demo15-模块热替换-源代码)
 1. [React路由](#demo16-react路由-源代码)
 
@@ -796,7 +796,7 @@ module.exports = {
 };
 ```
 
-## Demo14: 公开全局变量 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo14))
+## Demo14: 公共全局变量 ([源代码](https://github.com/ruanyf/webpack-demos/tree/master/demo14))
 
 如果要使用一些全局变量，并且不想将它们包含在 Webpack 包中，可以在 `webpack.config.js` 中启用 `externals` 字段 ([官方文档](http://webpack.github.io/docs/library-and-externals.html)).
 
