@@ -7,7 +7,7 @@
 首先, 全局安装 [Webpack](https://www.npmjs.com/package/webpack) 和 [webpack-dev-server](https://www.npmjs.com/package/webpack-dev-server) .
 
 ```bash
-$ npm i -g webpack@1.x webpack-dev-server@1.x
+$ npm install -g webpack@1.x webpack-dev-server@1.x
 ```
 
 然后, 将项目克隆到本地并安装项目的依赖
@@ -70,7 +70,7 @@ $ webpack
 - `webpack -d` – 包含资源地图
 - `webpack --colors` - 让编译的输出内容带有颜色
 
-要生产一个可以准备就绪的应用程序，您可以在 package.json 文件中写下` scripts` 字段，如下所示
+为了准备生成一个应用程序，您可以在 package.json 文件中写下` scripts` 字段，如下所示
 
 ```javascript
 // package.json
