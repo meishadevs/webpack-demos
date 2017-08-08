@@ -93,7 +93,7 @@ $ webpack
 1. [image-loader](#demo05-image-loader-源代码)
 1. [CSS模块](#demo06-css模块-源代码)
 1. [UglifyJs插件](#demo07-uglifyjs插件-源代码)
-1. [加载第三方Webpack插件](#demo08-第三方Webpack插件-源代码)
+1. [第三方Webpack插件](#demo08-第三方Webpack插件-源代码)
 1. [环境标签](#demo09-环境标签-源代码)
 1. [代码拆分](#demo10-代码拆分-源代码)
 1. [代码拆分和bundle-loader](#demo11-代码拆分和-bundle-loader-源代码)
